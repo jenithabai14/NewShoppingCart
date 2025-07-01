@@ -1,0 +1,39 @@
+div+span{
+    background-color: dodgerblue;
+}
+q:lang(title)
+{
+    quotes: "%" "@";
+}
+a:visited{
+    color: darkturquoise;
+}
+input:focus{
+    border: 10px solid red;
+    box-shadow: 20px 20px green;
+    color: lightcoral;
+}
+h6:nth-child(4){
+    background-color: aqua;
+}
+
+p,h4{
+    color:darkcyan;
+    border: inherit;
+}
+.jeni{
+    border: 20px solid gray;
+    height: 100px;
+    width: 100px;
+}
+.jesa{
+    border: 20px solid rgb(114, 29, 29);
+    height: 100px;
+    width: 100px;
+    top: 50px;
+    position: absolute;
+}.z1{
+    border: 50px;
+    height: 100px;
+    width: 100px;
+}

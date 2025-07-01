@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Letter Count and Vowel Checker</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      line-height: 1.6;
+    }
+    textarea {
+      width: 100%;
+      height: 100px;
+      margin-top: 10px;
+      padding: 10px;
+      font-size: 16px;
+    }
+    input {
+      padding: 8px;
+      margin: 5px 0;
+      font-size: 16px;
+    }
+    .output {
+      margin-top: 10px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      background: #f9f9f9;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Text Area 1: Count Each Letter</h2>
+  <textarea id="textArea1" placeholder="Type your text here..." oninput="countLetters()"></textarea>
+  <div class="output" id="letterCountOutput"></div>
+
+  <h2>Text Area 2: Word Letter Navigator</h2>
+  <textarea id="textArea2" placeholder="Enter a word from above text..."></textarea>
+  <label for="letterInput">Enter a letter from the word above:</label><br>
+  <input type="text" id="letterInput" maxlength="1" oninput="checkNextLetter()">
+  <div class="output" id="nextLetterOutput"></div>
+
+  <script>
+    const isVowel = (char) => 'aeiouAEIOU'.includes(char);
+
+    function countLetters() {
+      const text = document.getElementById('textArea1').value.toLowerCase();
+      const letterCount = {};
+
+      for (let char of text) {
+        if (/[a-z]/.test(char)) {
+          letterCount[char] = (letterCount[char] || 0) + 1;
+        }
+      }
+
+      let output = '';
+      for (let letter of Object.keys(letterCount).sort()) {
+        output += `'${letter}' is present ${letterCount[letter]} time(s)<br>`;
+      }
+
+      document.getElementById('letterCountOutput').innerHTML = output || 'No letters found.';
+    }
+
+    function checkNextLetter() {
+      const word = document.getElementById('textArea2').value.trim();
+      const letter = document.getElementById('letterInput').value.trim();
+
+      if (!word || !letter) {
+        document.getElementById('nextLetterOutput').innerText = "Please enter both a word and a letter.";
+        return;
+      }
+
+      const index = word.indexOf(letter);
+      if (index === -1) {
+        document.getElementById('nextLetterOutput').innerText = `The letter "${letter}" is not in the word "${word}".`;
+        return;
+      }
+
+      if (index + 1 >= word.length) {
+        document.getElementById('nextLetterOutput').innerText = `The letter "${letter}" is the last letter in the word "${word}".`;
+        return;
+      }
+
+      const nextChar = word[index + 1];
+      const vowelStatus = isVowel(nextChar) ? "a vowel" : "not a vowel";
+      document.getElementById('nextLetterOutput').innerText =
+        `The letter after "${letter}" is "${nextChar}", which is ${vowelStatus}.`;
+    }
+  </script>
+
+</body>
+</html>

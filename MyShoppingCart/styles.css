@@ -1,0 +1,18 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .bg-cover {
+    background: url('https://images.unsplash.com/photo-1604147706282-6e8b6c6b2c68') no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 100px 0;
+  }
+  
+  .card-title {
+    font-weight: bold;
+  }
+  
+  textarea {
+    resize: none;
+  }

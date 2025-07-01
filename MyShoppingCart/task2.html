@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Chat Box - Letter Count &amp; Next Word</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      padding: 30px;
+    }
+
+    .container {
+      max-width: 600px;
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    textarea, input, button {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      cursor: pointer;
+    }
+
+    .output {
+      background: #f9f9f9;
+      padding: 10px;
+      border-radius: 6px;
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Smart Chat Box</h2>
+
+    <!-- Paragraph Input -->
+    <label>Enter a paragraph:</label>
+    <textarea id="paragraphInput" placeholder="Type your paragraph here..."></textarea>
+
+    <button onclick="countLetters()">Count Letters</button>
+    <div class="output" id="letterOutput"></div>
+
+    <!-- Word Input -->
+    <label>Find the next word after:</label>
+    <input type="text" id="searchWord" placeholder="Enter a word to search...">
+    <button onclick="findNextWord()">Find Next Word</button>
+    <div class="output" id="nextWordOutput"></div>
+  </div>
+
+  <script>
+    let savedParagraph = "";
+
+    function countLetters() {
+      const text = document.getElementById("paragraphInput").value.toLowerCase();
+      savedParagraph = text; // Save for second use
+      const counts = {};
+
+      for (let char of text) {
+        if (char >= 'a' && char <= 'z') {
+          counts[char] = (counts[char] || 0) + 1;
+        }
+      }
+
+      let output = "Letter Counts:\n";
+      for (let letter in counts) {
+        output += ${letter}: ${counts[letter]}\n;
+      }
+
+      document.getElementById("letterOutput").textContent = output;
+    }
+
+    function findNextWord() {
+      const word = document.getElementById("searchWord").value.toLowerCase();
+      const words = savedParagraph.split(/\s+/).map(w => w.replace(/[.,?!]/g, ''));
+      let result = Word "${word}" not found.;
+
+      for (let i = 0; i < words.length - 1; i++) {
+        if (words[i] === word) {
+          result = The word after "${word}" is "${words[i + 1]}".;
+          break;
+        }
+      }
+
+      document.getElementById("nextWordOutput").textContent = result;
+    }
+  </script>
+
+</body>
+</html>

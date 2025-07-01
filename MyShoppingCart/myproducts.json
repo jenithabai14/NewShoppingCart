@@ -1,0 +1,208 @@
+[
+    {
+        "filter_id":1,
+        "products":[{
+            "product_id":10,
+            "product_name":"Fridge",
+            "imgsrc":"fridge.jpg",
+            "price":15000
+        },
+        {"product_id":11,
+            "product_name":"Air conditioner",
+            "imgsrc":"Ac2.jpg",
+            "price":35000
+            
+
+        },
+        {
+        "product_id":13,
+            "product_name":"Washing Machine",
+            "imgsrc":"washing machine.jpg",
+            "price":20000
+            
+    },
+    {"product_id":14,
+            "product_name":"Television",
+            "imgsrc":"tv1.jpg",
+            "price":45000
+        
+    },
+    {"product_id":15,
+            "product_name":"Bed",
+            "imgsrc":"bed.jpg",
+            "price":25000
+
+    },{"product_id":16,
+            "product_name":"Fan",
+            "imgsrc":"fan2.0.jpg",
+            "price":1500
+
+    }   
+    ]
+
+    },
+    {
+        "filter_id":2,
+        "products":[{
+            "product_id":17,
+            "product_name":"Shirts",
+            "imgsrc":"mw1.jpg",
+            "price":899
+        },
+        {"product_id":18,
+            "product_name":"TShirts",
+            "imgsrc":"mw2.jpg",
+            "price":1599
+            
+
+        },
+        {
+        "product_id":19,
+            "product_name":"Jacket",
+            "imgsrc":"mw3.jpg",
+            "price":3599
+            
+    },
+    {"product_id":20,
+            "product_name":"Shorts",
+            "imgsrc":"mw4.jpg",
+            "price":499
+        
+    },
+    {"product_id":21,
+            "product_name":"kurtas",
+            "imgsrc":"mw5.jpg",
+            "price":699
+
+    },{"product_id":22,
+            "product_name":"pants",
+            "imgsrc":"pants2.0.jpg",
+            "price":1599
+
+
+    }]},
+    {"filter_id":3,
+        "products":[{
+            "product_id":23,
+            "product_name":"Kurti",
+            "imgsrc":"wm1.jpg",
+            "price":699
+        },
+        {"product_id":24,
+            "product_name":"Saree",
+            "imgsrc":"ww2.jpg",
+            "price":1599
+            
+
+        },
+        {
+        "product_id":25,
+            "product_name":"Womens shirts",
+            "imgsrc":"ww3.jpg",
+            "price":599
+            
+    },
+    {"product_id":26,
+            "product_name":"Gowns",
+            "imgsrc":"ww4.jpg",
+            "price":999
+        
+    },
+    {"product_id":27,
+            "product_name":"Party wear",
+            "imgsrc":"ww5.jpg",
+            "price":9999
+
+    },{"product_id":28,
+            "product_name":"Half saree",
+            "imgsrc":"ww6.jpg",
+            "price":5999
+
+
+    }]},
+    {"filter_id":4,
+        "products":[{
+            "product_id":29,
+            "product_name":"Ambur Biryani",
+            "imgsrc":"biryani2.jpg",
+            "price":249
+        },
+        {"product_id":30,
+            "product_name":"Shawarma",
+            "imgsrc":"shawarma3.jpg",
+            "price":159
+            
+
+        },
+        {
+        "product_id":31,
+            "product_name":"Momos",
+            "imgsrc":"momos2.jpg",
+            "price":159
+            
+    },
+    {"product_id":32,
+            "product_name":"parotta",
+            "imgsrc":"paratta2.jpg",
+            "price":129
+        
+    },
+    {"product_id":33,
+            "product_name":"Chicken lollipop",
+            "imgsrc":"lollipop.jpg",
+            "price":249
+
+    },{"product_id":34,
+            "product_name":"Mandi Biryani",
+            "imgsrc":"mandi.jpg",
+            "price":599
+
+
+        
+    }]},
+    {
+       "filter_id":5,
+        "products":[{
+            "product_id":35,
+            "product_name":"Mens Casual Shoes",
+            "imgsrc":"shoes1.jpg",
+            "price":599
+        },
+        {"product_id":36,
+            "product_name":"Office Wear Shoes",
+            "imgsrc":"shoes2.0.jpg",
+            "price":999
+            
+
+        },
+        {
+        "product_id":37,
+            "product_name":"sandals for men",
+            "imgsrc":"slipper1.jpg",
+            "price":499
+            
+    },
+    {"product_id":38,
+            "product_name":"Trendy shoes ",
+            "imgsrc":"shoes123.jpg",
+            "price":2999
+        
+    },
+    {"product_id":39,
+            "product_name":"Shoes",
+            "imgsrc":"shoes321.jpg",
+            "price":9999
+
+    },{"product_id":40,
+            "product_name":"Sandal",
+            "imgsrc":"sandal789.jpg",
+            "price":5999
+
+
+        
+    }]}
+
+
+
+
+]

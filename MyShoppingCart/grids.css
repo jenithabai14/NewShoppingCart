@@ -1,0 +1,23 @@
+.one{
+    background-color: aqua;
+}
+.two{
+    background-color: rgb(98, 255, 0);
+}
+.three{
+    background-color: rgb(118, 48, 172);
+}
+.four{
+    background-color: rgb(67, 20, 28);
+}
+.five{
+    background-color: rgb(255, 0, 170);
+}
+.six{
+    background-color: rgb(181, 78, 194);
+}
+main{
+    display: grid;
+    grid-template-columns: repeat(1, 50px);
+    grid-template-rows: 100px 100px ;
+}
